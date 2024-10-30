@@ -1,0 +1,25 @@
+#install development packages
+install-repository-development-packages:
+    @pacman -Syu
+    @echo "Installing terminal configuration tools"
+    @pacman -S alacritty zellij yazi nvim fish fisher
+    @echo "Installing container tools"
+    @pacman -S docker docker-compose podman
+
+#install utility packages
+install-repository-development-packages:
+    @pacman -Syu
+    @echo "Installing utility tools"
+    @pacman -S noisetorch audacity obs-studio
+
+#install yay
+install-yay:
+    @sudo pacman -S --needed git base-devel yay
+
+#install AUR development packages
+install-aur-development-packages: install-yay
+    @yay -S asdf-vm
+
+#install AUR utility packages
+install-aur-packages: install-yay
+    @yay -S zen-browser-avx2-bin crow-translate
