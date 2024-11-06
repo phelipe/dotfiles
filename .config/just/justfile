@@ -30,6 +30,7 @@ configure-tools:
     @echo "configure terminal tools"
     echo "set -g -x fish_greeting ''" >> ~/.config/fish/config.fish
     echo "alias v \"nvim\"" >> ~/.config/fish/config.fish
+    echo "alias yy \"yazi\"" >> ~/.config/fish/config.fish
     echo "alias x \"exit\"" >> ~/.config/fish/config.fish
     echo "alias lg \"lazygit\"" >> ~/.config/fish/config.fish
     echo "source /opt/asdf-vm/asdf.fish" >> ~/.config/fish/config.fish
