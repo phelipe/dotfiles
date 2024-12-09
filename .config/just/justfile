@@ -2,7 +2,7 @@
 install-repository-packages:
     @sudo pacman -Syu --noconfirm
     @echo "Installing terminal configuration tools"
-    @sudo pacman -S --noconfirm alacritty zellij yazi neovim fish fisher zoxide lazygit
+    @sudo pacman -S --noconfirm alacritty zellij yazi neovim fish fisher zoxide lazygit kitty
     @sudo chsh -s /usr/bin/fish
     @curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
     @echo "Installing container tools"
