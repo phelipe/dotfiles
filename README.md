@@ -7,6 +7,3 @@ To install stow on arch use
 ```bash
 sudo pacman -S stow
 ```
-para instalar o android sdk
-
-yay -S android-sdk-cmdline-tools-latest
