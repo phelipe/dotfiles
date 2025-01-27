@@ -1,6 +1,7 @@
 -- package for use buffer as "tabs"
 return {
   'nvim-tree/nvim-tree.lua',
+  enabled = false,
   event = 'VeryLazy',
   version = '*',
   dependencies = 'nvim-tree/nvim-web-devicons',
