@@ -2,13 +2,20 @@ return {
   'jellydn/hurl.nvim',
   dependencies = {
     'MunifTanjim/nui.nvim',
-    'nvim-lua/plenary.nvim',
-    'nvim-treesitter/nvim-treesitter',
+    -- 'nvim-lua/plenary.nvim',
+    -- 'nvim-treesitter/nvim-treesitter',
+    -- {
+    --   'MeanderingProgrammer/render-markdown.nvim',
+    --   opts = {
+    --     file_types = { 'markdown' },
+    --   },
+    --   ft = { 'markdown' },
+    -- },
   },
   ft = 'hurl',
   opts = {
     -- Show debugging info
-    debug = false,
+    debug = true,
     -- Show notification on run
     show_notification = false,
     -- Show response in popup or split
