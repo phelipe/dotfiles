@@ -1,0 +1,13 @@
+window-decoration = false
+theme = GruvboxDark
+background-opacity = 0.96
+font-family = "FiraCode Nerd Font Mono"
+font-size = 14
+
+keybind = cmd+t=unbind
+keybind = cmd+n=unbind
+keybind = cmd+c=unbind
+keybind = cmd+w=unbind
+keybind = cmd+opt+left=unbind
+keybind = cmd+opt+right=unbind
+
