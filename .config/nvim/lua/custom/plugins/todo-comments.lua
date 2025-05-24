@@ -6,6 +6,6 @@ return {
   dependencies = { 'nvim-lua/plenary.nvim' },
   config = function()
     require('todo-comments').setup {}
-    vim.keymap.set('n', '<Leader>st', ':TodoTelescope<CR>', { silent = true, desc = '[S]earch [T]odos' })
+    vim.keymap.set('n', '<Leader>st', '::TodoFzfLua<CR>', { silent = true, desc = '[S]earch [T]odos' })
   end,
 }
