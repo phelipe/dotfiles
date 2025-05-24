@@ -1,8 +1,19 @@
+-- PLUGIN for searchs
 return {
   'ibhagwan/fzf-lua',
-  -- optional for icon support
   dependencies = { 'nvim-tree/nvim-web-devicons' },
-  opts = {},
+  opts = {
+    fzf_opts = {
+      ['--layout'] = 'default',
+    },
+    winopts = {
+      preview = {
+        layout = 'horizontal',
+        horizontal = 'down:50%',
+        scrollbar = 'float',
+      },
+    },
+  },
   keys = {
     { '<leader><leader>', '<cmd>lua require("fzf-lua").buffers()<cr>', desc = 'Search Buffers' },
     { '<leader>sf', '<cmd>lua require("fzf-lua").files()<cr>', desc = 'Search Files' },
