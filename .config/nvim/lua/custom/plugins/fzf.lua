@@ -13,6 +13,12 @@ return {
         scrollbar = 'float',
       },
     },
+    keymap = {
+      fzf = {
+        ['ctrl-q'] = 'select-all+accept',
+        ['ctrl-a'] = 'accept',
+      },
+    },
   },
   keys = {
     { '<leader><leader>', '<cmd>lua require("fzf-lua").buffers()<cr>', desc = 'Search Buffers' },
