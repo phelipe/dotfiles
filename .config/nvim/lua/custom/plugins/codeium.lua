@@ -1,7 +1,7 @@
 -- Existe uma referência ao nome codeium no arquivo init.lua, caso remova esse plugin lembrar de remover lá também
 return {
-  'Exafunction/codeium.vim',
-  -- enabled = false,
+  'Exafunction/windsurf.vim',
+  enabled = false,
   event = 'BufEnter',
   init = function()
     vim.g.codeium_disable_bindings = 1
