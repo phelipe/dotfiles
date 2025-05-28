@@ -28,7 +28,7 @@ foreground = "#ebdbb2"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
-size = 13.0
+size = 15.5
 
 [font.bold]
 family = "FiraCode Nerd Font Mono"
