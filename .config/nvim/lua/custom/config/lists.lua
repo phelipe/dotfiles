@@ -4,7 +4,7 @@
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 return {
-  servers = {
+  lsp_servers = {
     -- clangd = {},
     gopls = {
       settings = {
@@ -44,5 +44,25 @@ return {
     'prettierd', --prettier formatter but faster
     'stylua', --lua formatter
     'eslint_d', --eslint linter but faster
+  },
+  treesitter_ensure_installed = {
+    'c',
+    'cpp',
+    'go',
+    'lua',
+    'python',
+    'rust',
+    'tsx',
+    'typescript',
+    'vimdoc',
+    'vim',
+    'dart',
+    'make',
+    'yaml',
+    'kdl',
+    'elixir',
+    'heex',
+    'eex',
+    'hurl',
   },
 }
