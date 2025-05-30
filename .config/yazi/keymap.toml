@@ -1,13 +1,6 @@
 # x11
 [[manager.prepend_keymap]]
-on  = "y"
+on  = "<C-c>"
 run = [ '''
-	shell 'echo "file://$@" | xclip -i -selection clipboard -t text/uri-list' --confirm
+	shell 'echo "file://$@" | xclip -selection clipboard -t text/uri-list' --confirm
 ''', "yank" ]
-
-# wayland
-# [[manager.prepend_keymap]]
-# on  = "y"
-# run = [ '''
-# 	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm 
-# ''', "yank" ]
