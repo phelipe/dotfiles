@@ -46,7 +46,7 @@ family = "FiraCode Nerd Font Mono"
 program = "zellij"
 
 [window]
-opacity= 0.95
+opacity= 0.99
 
 
 [terminal]
