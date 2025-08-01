@@ -2,7 +2,7 @@ window-decoration = false
 theme = GruvboxDark
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
-background-opacity = 0.98
+background-opacity = 0.99
 keybind = cmd+t=unbind
 keybind = cmd+n=unbind
 keybind = cmd+c=unbind

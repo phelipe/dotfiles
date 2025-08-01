@@ -20,6 +20,7 @@ return {
     }
     vim.keymap.set('n', '<leader>at', '<cmd>GoTagAdd json<cr>', { desc = 'GO -[A]dd json [T]ag' })
     vim.keymap.set('n', '<leader>ayt', '<cmd>GoTagAdd yaml<cr>', { desc = 'GO -[A]dd [Y]aml [T]ag' })
+    vim.keymap.set('n', '<leader>avt', '<cmd>GoTagAdd validate<cr>', { desc = 'GO -[A]dd [V]alidation [T]ag' })
     vim.keymap.set('n', '<leader>ft', '<cmd>GoTestAdd<cr>', { desc = 'GO -[A]dd [F]unction [T]est' })
     vim.keymap.set('n', '<leader>fat', '<cmd>GoTestAll<cr>', { desc = 'GO -[A]dd [A]ll [T]est' })
     vim.keymap.set('n', '<leader>ae', '<cmd>GoIfErr<cr>', { desc = 'GO -[A]dd if [E]rror' })
