@@ -1,5 +1,5 @@
 # x11
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = "<C-c>"
 run = [ '''
 	shell 'echo "file://$@" | xclip -selection clipboard -t text/uri-list' --confirm
