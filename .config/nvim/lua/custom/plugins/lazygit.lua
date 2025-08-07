@@ -7,6 +7,6 @@ return {
     'nvim-lua/plenary.nvim',
   },
   config = function()
-    vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', { desc = 'Harpoon Next Mark' })
+    vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', { desc = 'OPen LazyGit' })
   end,
 }
