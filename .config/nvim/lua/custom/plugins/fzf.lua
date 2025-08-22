@@ -24,6 +24,7 @@ return {
     { '<leader><leader>', '<cmd>lua require("fzf-lua").buffers()<cr>', desc = 'Search Buffers' },
     { '<leader>sf', '<cmd>lua require("fzf-lua").files()<cr>', desc = 'Search Files' },
     { '<leader>sg', '<cmd>lua require("fzf-lua").grep_project()<cr>', desc = 'Search in Files with Grep' },
+    { '<leader>sG', '<cmd>lua require("fzf-lua").grep_curbuf()<cr>', desc = 'Search in Buffer with Grep' },
     -- LSP
     { 'gr', '<cmd>lua require("fzf-lua").lsp_references()<cr>', desc = '[G]oto [R]eferences' },
     { 'gd', '<cmd>lua require("fzf-lua").lsp_definitions()<cr>', desc = 'G]oto [D]efinitions' },
