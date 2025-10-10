@@ -1,5 +1,5 @@
 window-decoration = false
-theme = GruvboxDark
+theme = Gruvbox Dark
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
 background-opacity = 0.99
