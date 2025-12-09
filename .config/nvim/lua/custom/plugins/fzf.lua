@@ -28,6 +28,7 @@ return {
     -- LSP
     { 'gr', '<cmd>lua require("fzf-lua").lsp_references()<cr>', desc = '[g]oto [r]eferences' },
     { 'gd', '<cmd>lua require("fzf-lua").lsp_definitions()<cr>', desc = '[g]oto [d]efinitions' },
+    { 'gt', '<cmd>lua require("fzf-lua").lsp_typedefs()<cr>', desc = '[g]oto [t]ype definitions' },
     { 'gI', '<cmd>lua require("fzf-lua").lsp_implementations()<cr>', desc = '[g]oto [i]mplementation' },
     { '<leader>ss', '<cmd>lua require("fzf-lua").lsp_document_symbols()<cr>', desc = '[s]search [s]ymbols in buffer' },
     { '<leader>sS', '<cmd>lua require("fzf-lua").lsp_workspace_symbols()<cr>', desc = '[s]earch [S]ymbols in workspace' },
