@@ -37,6 +37,7 @@ return {
     -- GIT
     { '<leader>sc', '<cmd>lua require("fzf-lua").git_commits()<cr>', desc = '[s]earch [c]ommits on workspace' },
     { '<leader>sC', '<cmd>lua require("fzf-lua").git_bcommits()<cr>', desc = '[s]earch [C]ommits on buffer' },
+    { '<leader>se', '<cmd>lua require("fzf-lua").git_status()<cr>', desc = '[s]earch [e]dited files' },
     -- { '<leader>sgd', '<cmd>lua require("fzf-lua").git_diff()<cr>', desc = '[s]earch [g]it [d]iff' },
   },
 }
