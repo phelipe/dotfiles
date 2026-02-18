@@ -2,8 +2,50 @@ local ls = require 'luasnip'
 local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
+local rep = require('luasnip.extras').rep
 
 return {
+  -- LUA snipet
+  -- class
+  s('class', {
+    t '---@class ',
+    i(1, 'ClassName'),
+    t { '', 'local ' },
+    rep(1),
+    t ' = {}',
+    t { '', '' },
+    rep(1),
+    t '.__index = ',
+    rep(1),
+    t { '', '', '---@return ' },
+    rep(1),
+    t { '', 'function ' },
+    rep(1),
+    t '.new(',
+    i(2),
+    t ')',
+    t { '', '    local self = setmetatable({}, ' },
+    rep(1),
+    t ')',
+    t { '', '' },
+    t '    ',
+    i(0),
+    t { '', '', '    return self', 'end', '', 'return ' },
+    rep(1),
+  }),
+  -- module
+  s('mod', {
+    t '---@class ',
+    i(1, 'ModuleName'),
+    t { '', 'local ' },
+    rep(1),
+    t ' = {}',
+    t { '', '' },
+    i(0),
+    t { '', 'return ' },
+    rep(1),
+  }),
+
   -- DEFOLD snipets
   -- Script Defold básico
   s('dfscript', {
