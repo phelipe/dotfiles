@@ -63,6 +63,5 @@ return {
     'elixir',
     'heex',
     'eex',
-    'hurl',
   },
 }
