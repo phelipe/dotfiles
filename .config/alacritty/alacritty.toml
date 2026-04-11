@@ -1,31 +1,40 @@
-# theme = "Gruvbox-Dark"
+[general]
+import = [
+  "~/.config/alacritty/dank-theme.toml"
+]
 
-[colors.bright]
-black = "#928374"
-blue = "#83a598"
-cyan = "#8ec07c"
-green = "#b8bb26"
-magenta = "#d3869b"
-red = "#fb4934"
-white = "#ebdbb2"
-yellow = "#fabd2f"
+[window]
+decorations = "None"
+padding = { x = 12, y = 12 }
+opacity = 1.0
 
-[colors.normal]
-black = "#282828"
-blue = "#458588"
-cyan = "#689d6a"
-green = "#98971a"
-magenta = "#b16286"
-red = "#cc241d"
-white = "#a89984"
-yellow = "#d79921"
+[scrolling]
+history = 3023
 
-[colors.primary]
-background = "#282828"
-foreground = "#ebdbb2"
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+unfocused_hollow = true
 
-[env]
-WINIT_X11_SCALE_FACTOR = "1"
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = false
+
+[bell]
+duration = 0
+
+# [keyboard]
+# bindings = [
+#   { key = "C",       mods = "Control|Shift", action = "Copy"  },
+#   { key = "V",       mods = "Control|Shift", action = "Paste" },
+#   { key = "N",       mods = "Control|Shift", action = "SpawnNewInstance" },
+#   { key = "Equals",  mods = "Control|Shift", action = "IncreaseFontSize" },
+#   { key = "Minus",   mods = "Control",       action = "DecreaseFontSize" },
+#   { key = "Key0",    mods = "Control",       action = "ResetFontSize"    },
+#   { key = "Enter",   mods = "Shift",         chars = "\n" },
+# ]
 
 [font]
 size = 15.5
@@ -41,12 +50,7 @@ family = "FiraCode Nerd Font Mono"
 
 [font.normal]
 family = "FiraCode Nerd Font Mono"
-
-[terminal.shell]
-program = "zellij"
-
-[window]
-opacity= 0.99
-
-
-[terminal]
+#
+# [terminal.shell]
+# program = "zellij"
+#
