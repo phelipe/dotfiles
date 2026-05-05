@@ -2,7 +2,7 @@
 install-repository-packages:
     @sudo pacman -Syu --noconfirm
     @echo "Installing terminal configuration tools"
-    @sudo pacman -S --noconfirm alacritty zellij yazi neovim fish fisher zoxide lazygit ghostty mise wl-clipboard tree-sitter-cli fzf usage
+    @sudo pacman -S --noconfirm alacritty zellij yazi fish fisher zoxide lazygit ghostty mise wl-clipboard tree-sitter-cli fzf usage
     @sudo chsh -s /usr/bin/fish
     @echo "Installing container tools"
     @sudo pacman -S --noconfirm docker docker-compose podman unzip
@@ -43,9 +43,11 @@ configure-tools:
 
 
 #install programming languages
-install-programming-languages:
+install-mise-tools:
    @echo "Installing languages using mise"
    @mise install node
    @mise use -g node
    @mise install go
    @mise use -g go
+   @mise install neovim@0.11
+   @mise use -g neovim
