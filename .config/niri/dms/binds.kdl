@@ -129,4 +129,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Tab repeat=false { toggle-overview; }
+    Ctrl+Alt+Period {spawn "playerctl" "--player=psysonic,spotify" "next";}
+    Ctrl+Alt+Comma {spawn "playerctl" "--player=psysonic,spotify" "previous";}
+    Ctrl+Alt+P {spawn "playerctl" "--player=psysonic,spotify" "play-pause";}
 }
