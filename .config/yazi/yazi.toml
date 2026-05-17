@@ -1,3 +1,8 @@
 [mgr]
 open = "xdg-open"
 shell = ["bash", "-c"]
+
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, desc = "neovim" }
+]
